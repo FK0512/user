@@ -1,4 +1,4 @@
-// App.js
+
 import React, { useState, useEffect } from 'react';
 import {
   View,
@@ -14,7 +14,6 @@ import axios from 'axios';
 
 const Stack = createStackNavigator();
 
-// User List Screen
 function UserListScreen({ navigation }) {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -68,7 +67,7 @@ function UserListScreen({ navigation }) {
   );
 }
 
-// User Details Screen
+
 function UserDetailsScreen({ route, navigation }) {
   const { user } = route.params;
 
@@ -82,7 +81,7 @@ function UserDetailsScreen({ route, navigation }) {
   );
 }
 
-// App Component
+
 export default function App() {
   return (
     <NavigationContainer>
